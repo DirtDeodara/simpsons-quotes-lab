@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+.container {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  height: 40vh;
+}
+
+.h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 3vw;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(60%, -10%);
+  margin-top: -1vw;
+  color: #FFD90F;
+  text-shadow: 2px 2px 0 black,
+    2px -2px 0 black, -2px 2px 0 black,
+    -2px -2px 0 black, 2px 0px 0 black,
+    0px 2px 0 black, -2px 0px 0 black,
+    0px -2px 0 black;
+    color: #FFD90F;
+
+ 
+}

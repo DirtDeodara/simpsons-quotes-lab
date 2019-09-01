@@ -24,10 +24,10 @@ class SimpsonsQuote extends Component{
     const { quote, character, image, loading, fetch } = this.props;
     if(loading) return <h1>I am about to bestow glory and wonder upon your pretty little eyes. Please stand by...</h1>;
     return (
-      <>
+      <section >
         <Load handleClick={fetch}/>
         <Quote quote={quote} character={character} image={image}/>
-      </>
+      </section>
     );
   }
 
