@@ -7,7 +7,7 @@ function Load({ handleClick }) {
   return (
     <section className={styles.center}>
       <section className={styles.container}>
-        <img className={styles.img} onClick={handleClick} src={logo}></img>
+        <img className={styles.img} onClick={handleClick} src={logo} tabIndex="1"></img>
         <h3 className={styles.h3} onClick={handleClick}>Mmmmore!</h3>
       </section>
     </section>

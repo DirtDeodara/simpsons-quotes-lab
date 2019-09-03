@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Quote from '../../components/quote/Quote';
 import { getQuoteLoading, getQuote, getName, getImageUrl } from '../../selectors/quoteSelectors';
 import { fetchQuote } from '../../actions/simpsonsAction';
-import Load from '../../components/quote/Load';
 
 class SimpsonsQuote extends Component{
   static propTypes = {
@@ -17,20 +16,16 @@ class SimpsonsQuote extends Component{
 
   componentDidMount() {
     this.props.fetch();
-    console.log('console log', this.props.fetch());
   }
 
   render() {
-    const { quote, character, image, loading, fetch } = this.props;
-    if(loading) return <h1>I am about to bestow glory and wonder upon your pretty little eyes. Please stand by...</h1>;
+    const { quote, character, image } = this.props;
     return (
-      <section >
-        <Load handleClick={fetch}/>
+      <section>
         <Quote quote={quote} character={character} image={image}/>
       </section>
     );
   }
-
 }
 
 const mapStateToProps = state => ({
