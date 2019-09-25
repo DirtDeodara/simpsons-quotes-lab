@@ -1,6 +1,12 @@
 import React from 'react';
+import QuoteContainer from '../containers/facts/QuoteContainer';
+import HeaderContainer from '../containers/HeaderContainer';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <HeaderContainer/>
+      <QuoteContainer/>;
+    </>
+  );
 }
-  
